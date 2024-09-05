@@ -249,7 +249,9 @@
       "[ d": "editor::GoToPrevDiagnostic",
       "] c": "editor::GoToHunk",
       "[ c": "editor::GoToPrevHunk",
-      "g c": ["vim::PushOperator", "ToggleComments"]
+      "g c": ["vim::PushOperator", "ToggleComments"],
+      "d o": "editor::ToggleHunkDiff",
+      "d p": "editor::RevertSelectedHunks"
     }
   },
   {
@@ -321,6 +323,8 @@
       "ctrl-t": "vim::Indent",
       "ctrl-d": "vim::Outdent",
       "ctrl-k": ["vim::PushOperator", { "Digraph": {} }],
+      "ctrl-p": "editor::ShowCompletions",
+      "ctrl-n": "editor::ShowCompletions",
       "ctrl-r": ["vim::PushOperator", "Register"]
     }
   },
